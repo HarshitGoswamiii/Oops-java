@@ -23,6 +23,9 @@ class Employee {
 
 public class practice1 {
     public static void main(String[] args) {
-        
+        Employee Harshit = new Employee();
+        Harshit.setname();
+        Harshit.getname();
+        Harshit.getsalary();
     }
 }
