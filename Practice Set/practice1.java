@@ -53,6 +53,17 @@ class cellphone {
         }
     }
 
+    class rectangle{
+        int length;
+        int width;
+        public void area(){
+            System.out.println("Area : "+length*width);
+        }
+        public void parameter(){
+            System.out.println("Area : "+2*(length*width));
+
+        }
+    }
     public class practice1 {
         public static void main(String[] args) {
             // ----------------- Q - 1 ---------------->
@@ -68,9 +79,12 @@ class cellphone {
             // phone.vibrate();
 
             // ------------------ Q - 3 -------------->
-            square sq = new square();
-            sq.side = 3;
-            sq.area();
-            sq.parameter();
+            // square sq = new square();
+            // sq.side = 3;
+            // sq.area();
+            // sq.parameter();
+
+            // <---------------- Q - 4 --------------->
+
         }
     }
