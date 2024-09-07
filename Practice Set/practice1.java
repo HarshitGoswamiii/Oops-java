@@ -25,7 +25,10 @@ import java.util.Scanner;
 
 class cellphone{
     public void ringing(){
-        
+        System.out.println("Ringing.......");
+    }
+    public void vibrate(){
+        System.out.println("Vibraing.......");
     }
 }
 public class practice1 {
