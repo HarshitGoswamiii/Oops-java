@@ -85,6 +85,8 @@ class cellphone {
             // sq.parameter();
 
             // <---------------- Q - 4 --------------->
-
+            rectangle req = new rectangle();
+            req.area();
+            req.parameter();
         }
     }
