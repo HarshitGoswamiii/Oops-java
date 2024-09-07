@@ -10,22 +10,22 @@ class Employee {
         name = s.nextLine();
     }
 
-    public void getname() {
-        System.out.println("Name : " + name);
-    }
-
     public void getsalary() {
         System.out.print("Enter Salary : ");
         salary = s.nextInt();
-        System.out.println(salary);
+    }
+
+    public void getname() {
+        System.out.println("Name : " + name);
+        System.out.println("Salary : " + salary);
     }
 }
 
 public class practice1 {
     public static void main(String[] args) {
-        Employee Harshit = new Employee();
-        Harshit.setname();
-        Harshit.getname();
-        Harshit.getsalary();
+        Employee name = new Employee();
+        name.setname();
+        name.getsalary();
+        name.getname();
     }
 }
