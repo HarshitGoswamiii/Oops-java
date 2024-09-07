@@ -45,11 +45,11 @@ class cellphone {
         int side;
 
         public void area() {
-            System.out.println(side * side);
+            System.out.println("Area : "+side * side);
         }
 
         public void parameter() {
-            System.out.println(4 * side);
+            System.out.println("Parameter : "+4 * side);
         }
     }
 
@@ -69,7 +69,7 @@ class cellphone {
 
             // ------------------ Q - 3 -------------->
             square sq = new square();
-            sq.side = 4;
+            sq.side = 3;
             sq.area();
             sq.parameter();
         }
