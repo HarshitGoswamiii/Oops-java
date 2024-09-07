@@ -23,18 +23,19 @@ import java.util.Scanner;
 
 // <---------------------------------------------------Question 2------------------------------------------------->
 
-class cellphone{
-    public void ringing(){
-        System.out.println("Ringing.......");
-    }
-    public void vibrate(){
-        System.out.println("Vibraing.......");
-    }
-    public void calling(){
-        System.out.println("Calling.......");
+// class cellphone{
+//     public void ringing(){
+//         System.out.println("Ringing.......");
+//     }
+//     public void vibrate(){
+//         System.out.println("Vibraing.......");
+//     }
+//     public void calling(){
+//         System.out.println("Calling.......");
 
-    }
-}
+//     }
+// }
+// <---------------------------------------------------Question 3------------------------------------------------->
 public class practice1 {
     public static void main(String[] args) {
         // ----------------- Q - 1 ---------------->
@@ -44,9 +45,11 @@ public class practice1 {
         // name.getname();
 
         // ----------------- Q - 2 ---------------->
-        cellphone phone = new cellphone();
-        phone.calling();
-        phone.ringing();
-        phone.vibrate();
+        // cellphone phone = new cellphone();
+        // phone.calling();
+        // phone.ringing();
+        // phone.vibrate();
+
+        //  ------------------ Q - 3 -------------->
     }
 }
