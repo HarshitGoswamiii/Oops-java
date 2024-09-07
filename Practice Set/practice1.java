@@ -6,7 +6,7 @@ class Employee {
     Scanner s = new Scanner(System.in);
 
     public void setname() {
-        System.out.print("Enter Your Name");
+        System.out.print("Enter Your Name : ");
         name = s.nextLine();
     }
 
