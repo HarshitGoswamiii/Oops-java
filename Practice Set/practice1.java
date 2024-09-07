@@ -39,56 +39,79 @@ class cellphone {
 
     }
 }
-    // <---------------------------------------------------Question
-    // 3------------------------------------------------->
-    class square {
-        int side;
 
-        public void area() {
-            System.out.println("Area : "+side * side);
-        }
+// <---------------------------------------------------Question
+// 3------------------------------------------------->
+class square {
+    int side;
 
-        public void parameter() {
-            System.out.println("Parameter : "+4 * side);
-        }
+    public void area() {
+        System.out.println("Area : " + side * side);
     }
 
-    class rectangle{
-        int length;
-        int width;
-        public void area(){
-            System.out.println("Area : "+length*width);
-        }
-        public void parameter(){
-            System.out.println("Area : "+2*(length*width));
-
-        }
+    public void parameter() {
+        System.out.println("Parameter : " + 4 * side);
     }
-    public class practice1 {
-        public static void main(String[] args) {
-            // ----------------- Q - 1 ---------------->
-            // Employee name = new Employee();
-            // name.setname();
-            // name.getsalary();
-            // name.getname();
+}
 
-            // ----------------- Q - 2 ---------------->
-            // cellphone phone = new cellphone();
-            // phone.calling();
-            // phone.ringing();
-            // phone.vibrate();
+class rectangle {
+    int length;
+    int width;
 
-            // ------------------ Q - 3 -------------->
-            // square sq = new square();
-            // sq.side = 3;
-            // sq.area();
-            // sq.parameter();
-
-            // <---------------- Q - 4 --------------->
-            rectangle req = new rectangle();
-            req.length=3;
-            req.width=5;
-            req.area();
-            req.parameter();
-        }
+    public void area() {
+        System.out.println("Area : " + length * width);
     }
+
+    public void parameter() {
+        System.out.println("Area : " + 2 * (length * width));
+
+    }
+}
+
+class circle {
+    float radius;
+    float pi = 3.14f;
+
+    public void area() {
+        System.out.println("Area : " + 2 * pi * radius * radius);
+    }
+
+    public void parameter() {
+        System.out.println("Parameter : " + 2 * pi * radius);
+    }
+}
+
+public class practice1 {
+    public static void main(String[] args) {
+        // ----------------- Q - 1 ---------------->
+        // Employee name = new Employee();
+        // name.setname();
+        // name.getsalary();
+        // name.getname();
+
+        // ----------------- Q - 2 ---------------->
+        // cellphone phone = new cellphone();
+        // phone.calling();
+        // phone.ringing();
+        // phone.vibrate();
+
+        // ------------------ Q - 3 -------------->
+        // square sq = new square();
+        // sq.side = 3;
+        // sq.area();
+        // sq.parameter();
+
+        // <---------------- Q - 4 --------------->
+        // rectangle req = new rectangle();
+        // req.length = 3;
+        // req.width = 5;
+        // req.area();
+        // req.parameter();
+
+        // ---------------- Q - 5 ---------------->
+        circle crl = new circle();
+        crl.radius=5;
+        crl.area();
+        crl.parameter();
+    }
+}
