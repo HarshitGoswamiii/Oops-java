@@ -73,7 +73,7 @@ class circle {
     float pi = 3.14f;
 
     public void area() {
-        System.out.println("Area : " + 2 * pi * radius * radius);
+        System.out.println("Area : " +  pi * radius * radius);
     }
 
     public void parameter() {
