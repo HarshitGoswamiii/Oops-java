@@ -1,6 +1,4 @@
 import java.util.Scanner;
-
-
 class Employee {
     String name;
     int salary;
