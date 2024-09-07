@@ -30,6 +30,10 @@ class cellphone{
     public void vibrate(){
         System.out.println("Vibraing.......");
     }
+    public void calling(){
+        System.out.println("Calling.......");
+
+    }
 }
 public class practice1 {
     public static void main(String[] args) {
@@ -38,5 +42,11 @@ public class practice1 {
         // name.setname();
         // name.getsalary();
         // name.getname();
+
+        // ----------------- Q - 2 ---------------->
+        cellphone phone = new cellphone();
+        phone.calling();
+        phone.ringing();
+        phone.vibrate();
     }
 }
