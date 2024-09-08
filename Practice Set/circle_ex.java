@@ -30,8 +30,8 @@ class circle {
 public class circle_ex {
     public static void main(String[] args) {
         circle clr = new circle();
-        clr.setradius(23);
-        clr.checkpara(12.56f);
+        clr.setradius(2);
+        clr.checkpara(12f);
         clr.checkarea(12.56f);
 
     }
