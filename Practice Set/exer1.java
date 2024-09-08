@@ -4,16 +4,18 @@ import java.util.Scanner;
 class guessnum {
     int num;
     int ran;
-
-    public guessnum(int ran) {
+    int noofguesses;
+    public int guessnum(int ran) {
         Random R = new Random();
-        ran = R.nextInt();
+        ran = R.nextInt(100);
+        return ran;
     }
 
-    public void takeuserinput(int num) {
+    public int takeuserinput(int num) {
         Scanner s = new Scanner(System.in);
-        System.out.println("Enter Your Number");
-        num = s.nextInt();
+        System.out.println("Guess The Number : ");
+        num = s.nextInt(100);
+        return num;
     }
 
     public void iscorrect() {
