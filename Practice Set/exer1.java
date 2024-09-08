@@ -7,14 +7,14 @@ class Guessnum {
     int noofguesses=0;
     public int guessnum() {
         Random R = new Random();
-        ran = R.nextInt(100);
+        ran = R.nextInt();
         return ran;
     }
 
     public int takeuserinput() {
         Scanner s = new Scanner(System.in);
-        System.out.println("Guess The Number : ");
-        num = s.nextInt(100);
+        System.out.print("Guess The Number : ");
+        num = s.nextInt();
         return num;
     }
 
@@ -49,7 +49,7 @@ public class exer1 {
         Guessnum G = new Guessnum();
         G.guessnum();
         G.takeuserinput();
-        G.iscorrect();;
+        G.iscorrect();
         G.guesses();
     }
 }
