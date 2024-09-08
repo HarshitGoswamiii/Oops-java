@@ -1,4 +1,3 @@
-
 import java.util.Random;
 import java.util.Scanner;
 
@@ -11,9 +10,10 @@ class guessnum {
         ran = R.nextInt();
     }
 
-    public int takeuserinput() {
+    public void takeuserinput(int num) {
         Scanner s = new Scanner(System.in);
-
+        System.out.println("Enter Your Number");
+        num = s.nextInt();
     }
 }
 
