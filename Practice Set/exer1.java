@@ -2,12 +2,13 @@ import java.util.Random;
 import java.util.Scanner;
 
 class Guessnum {
-    int num;
-    int ran;
-    int noofguesses=0;
-    public int guessnum() {
+    public int num;
+    public int ran;
+    public int noofguesses = 0;
+
+    public int guessnum(int maxnum) {
         Random R = new Random();
-        ran = R.nextInt();
+        ran = R.nextInt(maxnum) + 1;
         return ran;
     }
 
@@ -19,26 +20,22 @@ class Guessnum {
     }
 
     public void iscorrect() {
-        while(num==ran){
-            if (num == ran) {
-                System.out.println("Your Guess is Right ! ");
-            } else if (num<ran) {
-                System.out.println("The Number Is Smaller ! ");
-            }
-            else if(num>ran){
-                System.out.println("The Number Is Greater ! ");
-            }
-            noofguesses++;
+        if (num == ran) {
+            System.out.println("Your Guess is Right ! ");
+        } else if (num < ran) {
+            System.out.println("The Number Is Smaller ! ");
+        } else if (num > ran) {
+            System.out.println("The Number Is Greater ! ");
         }
+        noofguesses++;
     }
-    public void guesses(){
-        if(noofguesses<=3){
+
+    public void guesses() {
+        if (noofguesses <= 3) {
             System.out.println("Pro Player ! ");
-        }
-        else if(noofguesses>=3 && noofguesses<=7){
+        } else if (noofguesses >= 3 && noofguesses <= 7) {
             System.out.println("Good Player ! ");
-        }
-        else{
+        } else {
             System.out.println("Bad Player ! ");
         }
     }
@@ -47,9 +44,13 @@ class Guessnum {
 public class exer1 {
     public static void main(String[] args) {
         Guessnum G = new Guessnum();
-        G.guessnum();
-        G.takeuserinput();
-        G.iscorrect();
+        int maxnum = 100;
+        int ran = G.guessnum(maxnum);
+        int userinput;
+        do {
+            userinput=G.takeuserinput();
+            G.iscorrect(userinput);
+        } while (num != ran);
         G.guesses();
     }
 }
