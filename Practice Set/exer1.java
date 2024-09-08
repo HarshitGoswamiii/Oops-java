@@ -47,7 +47,9 @@ class Guessnum {
 public class exer1 {
     public static void main(String[] args) {
         Guessnum G = new Guessnum();
-
-
+        G.guessnum();
+        G.takeuserinput();
+        G.iscorrect();;
+        G.guesses();
     }
 }
