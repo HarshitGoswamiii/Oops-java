@@ -5,13 +5,13 @@ class Guessnum {
     int num;
     int ran;
     int noofguesses=0;
-    public int guessnum(int ran) {
+    public int guessnum() {
         Random R = new Random();
         ran = R.nextInt(100);
         return ran;
     }
 
-    public int takeuserinput(int num) {
+    public int takeuserinput() {
         Scanner s = new Scanner(System.in);
         System.out.println("Guess The Number : ");
         num = s.nextInt(100);
@@ -46,7 +46,8 @@ class Guessnum {
 
 public class exer1 {
     public static void main(String[] args) {
-        guessnum
+        Guessnum G = new Guessnum();
+
 
     }
 }
