@@ -1,32 +1,25 @@
 class circle {
     private int r;
-    private int area;
-    private int para;
+    private float area;
+    private float para;
 
     public void setradius(int radius) {
         r = radius;
     }
-    public void getradius() {
-        System.out.println(r);
+
+    public void checkarea(int a) {
+        area = 3.14f * r * r;
+        if(area==a){
+
+        }
     }
 
-    public void setarea(int a) {
-        area = a;
-    }
-    public void getarea() {
-        System.out.println(area);
-    }
-
-    public void setparameter(int p) {
-        para = p;
-    }
-    public void getparameter(){
-        System.out.println(para);
-    }
 }
 
 public class circle_ex {
     public static void main(String[] args) {
+        circle clr = new circle();
+        clr.setradius(23);
 
     }
 }
