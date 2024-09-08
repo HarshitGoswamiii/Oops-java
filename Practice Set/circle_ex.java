@@ -13,10 +13,15 @@ class circle {
     public void setarea(int a) {
         area = a;
     }
-    
+    public void getarea() {
+        System.out.println(area);
+    }
 
     public void setparameter(int p) {
         para = p;
+    }
+    public void getparameter(){
+        System.out.println(para);
     }
 }
 
