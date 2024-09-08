@@ -15,6 +15,17 @@ class guessnum {
         System.out.println("Enter Your Number");
         num = s.nextInt();
     }
+
+    public void iscorrect() {
+        if (num == ran) {
+            System.out.println("Your Guess is Right ! ");
+        } else if (num<ran) {
+            System.out.println("The Number Is Smaller ! ");
+        }
+        else if(num>ran){
+            System.out.println("The Number Is Greater ! ");
+        }
+    }
 }
 
 public class exer1 {
