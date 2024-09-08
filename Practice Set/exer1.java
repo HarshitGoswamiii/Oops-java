@@ -1,10 +1,10 @@
 import java.util.Random;
 import java.util.Scanner;
 
-class guessnum {
+class Guessnum {
     int num;
     int ran;
-    int noofguesses;
+    int noofguesses=0;
     public int guessnum(int ran) {
         Random R = new Random();
         ran = R.nextInt(100);
@@ -19,19 +19,34 @@ class guessnum {
     }
 
     public void iscorrect() {
-        if (num == ran) {
-            System.out.println("Your Guess is Right ! ");
-        } else if (num<ran) {
-            System.out.println("The Number Is Smaller ! ");
+        while(num==ran){
+            if (num == ran) {
+                System.out.println("Your Guess is Right ! ");
+            } else if (num<ran) {
+                System.out.println("The Number Is Smaller ! ");
+            }
+            else if(num>ran){
+                System.out.println("The Number Is Greater ! ");
+            }
+            noofguesses++;
         }
-        else if(num>ran){
-            System.out.println("The Number Is Greater ! ");
+    }
+    public void guesses(){
+        if(noofguesses<=3){
+            System.out.println("Pro Player ! ");
+        }
+        else if(noofguesses>=3 && noofguesses<=7){
+            System.out.println("Good Player ! ");
+        }
+        else{
+            System.out.println("Bad Player ! ");
         }
     }
 }
 
 public class exer1 {
     public static void main(String[] args) {
+        guessnum
 
     }
 }
