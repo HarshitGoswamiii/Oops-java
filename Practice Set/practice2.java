@@ -40,25 +40,32 @@ class cylinder {
 }
 
 // <--------------------------------------------Q - 4
-//  ------------------------------------->
-class Rectangle{
+// ------------------------------------->
+class Rectangle {
     private int length;
     private int breadth;
-    public void Rectangle(int length){
+
+    public void Rectangle(int length) {
         this.breadth = 5;
-        System.out.println("Length : "+length);
-        System.out.println("Breadth : "+breadth);
+        System.out.println("Length : " + length);
+        System.out.println("Breadth : " + breadth);
     }
-    public void Rectangle(int length,int breadth){
-        this.length =4;
-        this.breadth=5;
-        System.out.println("Length : "+length);
-        System.out.println("Breadth : "+breadth);
+
+    public void Rectangle() {
+        this.length = 4;
+        this.breadth = 5;
+        System.out.println("Length : " + length);
+        System.out.println("Breadth : " + breadth);
     }
-    public void Rectangle(){
-        
+
+    public void Rectangle(int length, int breadth) {
+        this.length = length;
+        this.breadth = breadth;
+        System.out.println("Length : " + length);
+        System.out.println("Breadth : " + breadth);
     }
 }
+
 public class practice2 {
     public static void main(String[] args) {
         cylinder cyl = new cylinder(7, 10);
