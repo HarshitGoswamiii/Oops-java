@@ -2,9 +2,9 @@ import java.util.Random;
 import java.util.Scanner;
 
 class Guessnum {
-    public int num;
-    public int ran;
-    public int noofguesses = 0;
+    private int num; 
+    private int ran;
+    private int noofguesses = 0;
 
     public int guessnum(int maxnum) {
         Random R = new Random();
