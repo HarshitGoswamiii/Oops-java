@@ -45,7 +45,7 @@ class Guessnum {
 public class exer1 {
     public static void main(String[] args) {
         Guessnum G = new Guessnum();
-        int maxnum = 100;
+        int maxnum = 10;
         int random = G.guessnum(maxnum);
         int userinput ;
         do {
