@@ -22,6 +22,6 @@ public class inheritance {
         A.Speak();
 
         Dog dg = new Dog();
-        dg.walking();
+        dg.Bark();
     }
 }
