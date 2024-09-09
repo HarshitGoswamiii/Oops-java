@@ -20,6 +20,9 @@ class cylinder {
     public void surfacearea(){
         System.out.println("Surface area : "+(2*3.14*radius*(radius+height)));
     }
+    public void volume(){
+        System.out.println("Volume : "+3.14f*radius*radius*height);
+    }
 }
 
 public class practice2 {
@@ -30,5 +33,6 @@ public class practice2 {
         cyl.sethieght(10);
         cyl.getheight();
         cyl.surfacearea();
+        cyl.volume();
     }
 }
