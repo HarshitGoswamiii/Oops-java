@@ -5,7 +5,7 @@ class cylinder {
     public void setradius(int r) {
         r = radius;
     }
-    public void getraius(){
+    public void getradius(){
         System.out.println("Radius : "+radius);
     }
     public void sethieght(int h){
@@ -20,7 +20,8 @@ public class practice2 {
     public static void main(String[] args) {
         cylinder cyl = new cylinder();
         cyl.setradius(7);
-        cyl.getraius();
-        cyl.sethieght(h);
+        cyl.getradius();
+        cyl.sethieght(10);
+        cyl.getheight();
     }
 }
