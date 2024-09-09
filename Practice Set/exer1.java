@@ -2,9 +2,9 @@ import java.util.Random;
 import java.util.Scanner;
 
 class Guessnum {
-    private int num; 
-    private int ran;
-    private int noofguesses = 0;
+     int num; 
+     int ran;
+     int noofguesses = 0;
 
     public int guessnum(int maxnum) {
         Random R = new Random();
@@ -19,7 +19,7 @@ class Guessnum {
         return num;
     }
 
-    public void iscorrect() {
+    public void iscorrect(int number) {
         if (num == ran) {
             System.out.println("Your Guess is Right ! ");
         } else if (num < ran) {
@@ -31,6 +31,7 @@ class Guessnum {
     }
 
     public void guesses() {
+        System.out.println("No. of Guesses : "+noofguesses);
         if (noofguesses <= 3) {
             System.out.println("Pro Player ! ");
         } else if (noofguesses >= 3 && noofguesses <= 7) {
@@ -46,7 +47,7 @@ public class exer1 {
         Guessnum G = new Guessnum();
         int maxnum = 100;
         int ran = G.guessnum(maxnum);
-        int userinput;
+        int userinput = num;
         do {
             userinput=G.takeuserinput();
             G.iscorrect(userinput);
