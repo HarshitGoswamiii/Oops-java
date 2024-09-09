@@ -3,16 +3,19 @@ class cylinder {
     private int height;
 
     public void setradius(int r) {
-        r = radius;
+        radius = r;
     }
-    public void getradius(){
-        System.out.println("Radius : "+radius);
+
+    public void getradius() {
+        System.out.println("Radius : " + radius);
     }
-    public void sethieght(int h){
-        h=height;
+
+    public void sethieght(int h) {
+        height = h;
     }
-    public void getheight(){
-        System.out.println("Height : "+height);
+
+    public void getheight() {
+        System.out.println("Height : " + height);
     }
 }
 
