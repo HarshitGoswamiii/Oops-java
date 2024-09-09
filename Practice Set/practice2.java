@@ -18,7 +18,7 @@ class cylinder {
         System.out.println("Height : " + height);
     }
     public void surfacearea(){
-        System.out.println("Surface area : "+2*3.14*radius*(radius*height));
+        System.out.println("Surface area : "+(2*3.14*radius*(radius+height)));
     }
 }
 
