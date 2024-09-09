@@ -45,20 +45,20 @@ class Rectangle {
     private int length;
     private int breadth;
 
-    public void Rectangle(int length) {
+    public Rectangle(int length) {
         this.breadth = 5;
         System.out.println("Length : " + length);
         System.out.println("Breadth : " + breadth);
     }
 
-    public void Rectangle() {
+    public Rectangle() {
         this.length = 4;
         this.breadth = 5;
-        System.out.println("Length : " + length);
-        System.out.println("Breadth : " + breadth);
+        System.out.println("Length : " + this.length);
+        System.out.println("Breadth : " + this.breadth);
     }
 
-    public void Rectangle(int length, int breadth) {
+    public Rectangle(int length, int breadth) {
         this.length = length;
         this.breadth = breadth;
         System.out.println("Length : " + length);
@@ -68,12 +68,16 @@ class Rectangle {
 
 public class practice2 {
     public static void main(String[] args) {
-        cylinder cyl = new cylinder(7, 10);
+        // cylinder cyl = new cylinder(7, 10);
         // cyl.setradius(7);
         // cyl.getradius();
         // cyl.sethieght(10);
         // cyl.getheight();
         // cyl.surfacearea();
         // cyl.volume();
+
+        // Rectangle Rec = new Rectangle();
+        // Rectangle Rec = new Rectangle();
+        Rectangle Rec1 = new Rectangle(4,5);
     }
 }
