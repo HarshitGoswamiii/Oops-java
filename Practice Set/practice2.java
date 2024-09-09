@@ -17,6 +17,9 @@ class cylinder {
     public void getheight() {
         System.out.println("Height : " + height);
     }
+    public void surfacearea(){
+        System.out.println("Surface area : "+2*3.14*radius*(radius*height));
+    }
 }
 
 public class practice2 {
@@ -26,5 +29,6 @@ public class practice2 {
         cyl.getradius();
         cyl.sethieght(10);
         cyl.getheight();
+        cyl.surfacearea();
     }
 }
