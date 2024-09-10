@@ -20,7 +20,6 @@ public class inheritance {
     public static void main(String[] args){
         Animal A = new Animal();
         A.Speak();
-
         Dog dg = new Dog();
         dg.Bark();
     }
