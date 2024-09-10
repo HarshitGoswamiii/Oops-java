@@ -1,3 +1,4 @@
+// <----------------------------------------Q-1--------------------------------------->
 class Circle {
     public int radius;
 
@@ -19,11 +20,14 @@ class Cylinder extends Circle {
     }
 }
 
+// <-----------------------------------------------Q-2------------------------------->
+
+
 public class Practice3 {
     public static void main(String[] args) {
         // Circle clr = new Circle();
         // clr.Area(4);
         Cylinder cyl = new Cylinder();
-        cyl.Volume(4,5);
+        cyl.Volume(4, 5);
     }
 }
