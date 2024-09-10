@@ -2,7 +2,7 @@
 class Circle {
     public int radius;
 
-    public void setRad(int rad) {
+    Circle(int rad) {
         this.radius = rad;
     }
 
@@ -14,9 +14,13 @@ class Circle {
 
 class Cylinder extends Circle {
     public int height;
+    Cylinder(int rad,int height){
+        super(rad);
+        this.height=height;
+    }
 
-    public void Volume(int h, int rad) {
-        System.out.println("Volume Of Cyinder : " + 3.14 * rad * rad * h);
+    public void Volume() {
+        System.out.println("Volume Of Cyinder : " + 3.14 *this.radius*this.radius*height);
     }
 }
 
@@ -27,7 +31,6 @@ public class Practice3 {
     public static void main(String[] args) {
         // Circle clr = new Circle();
         // clr.Area(4);
-        Cylinder cyl = new Cylinder();
-        cyl.Volume(4, 5);
+        Cylinder cyl = new Cylinder(4,5);
     }
 }
