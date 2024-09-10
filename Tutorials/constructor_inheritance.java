@@ -1,8 +1,10 @@
-class Base{
+class Base {
     int x;
-    public void Base(){
+
+    public void Base() {
         System.out.println("This is Base Class ! ");
     }
+
     public int getX() {
         return x;
     }
@@ -11,14 +13,17 @@ class Base{
         this.x = x;
     }
 }
-class Derived{
+
+class Derived extends Base {
     int y;
-    public void Derived(){
+
+    public void Derived() {
         System.out.println("This is Derived Class ! ");
     }
 }
-public class constructor_inheritance {
-    public static void main(String[] args){
 
+public class constructor_inheritance {
+    public static void main(String[] args) {
+        Derived db = new Derived();
     }
 }
