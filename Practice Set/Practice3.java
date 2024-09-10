@@ -12,12 +12,15 @@ class Cylinder extends Circle {
     public int height;
 
     public void Area(int h) {
-        System.out.println("Area Of Cyinder : " + 2 * 3.14 * r * (r + h));
+        System.out.println("Area Of Cyinder : " + 2 * 3.14 * this.radius * (this.radius + h));
     }
 }
 
 public class Practice3 {
     public static void main(String[] args) {
-
+        Circle clr = new Circle();
+        clr.Area(4);
+        Cylinder cyl = new Cylinder();
+        cyl.Area(5);
     }
 }
