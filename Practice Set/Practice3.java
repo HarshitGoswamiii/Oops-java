@@ -10,8 +10,8 @@ class Circle {
 class Cylinder extends Circle {
     public int height;
 
-    public void Area(int h) {
-        System.out.println("Area Of Cyinder : " + 2 * 3.14f * radius * (radius + h));
+    public void Volume(int h) {
+        System.out.println("Volumecommt Of Cyinder : " + 3.14 * radius * radius * h);
     }
 }
 
@@ -20,6 +20,6 @@ public class Practice3 {
         Circle clr = new Circle();
         clr.Area(4);
         Cylinder cyl = new Cylinder();
-        cyl.Area(5);
+        cyl.Volume(5);
     }
 }
