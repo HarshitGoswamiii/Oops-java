@@ -23,7 +23,7 @@ class Derived1 extends Base1 {
         System.out.println("This is Derived Class ! ");
     }
     Derived1(int b) {
-        super(a);
+        super(0);
         System.out.println("This is Base Class to print b : "+b);
     }
 
