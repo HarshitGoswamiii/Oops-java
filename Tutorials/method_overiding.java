@@ -8,7 +8,7 @@ class A{
 }
 class B extends A{
     public void meth12(){
-        System.out.println("This is Method 1 of Class A ! ");
+        System.out.println("This is Method 1 of Class B ! ");
     }
     public void meth2(){
         System.out.println("This is Method 2 of Class B ! ");
@@ -20,6 +20,6 @@ public class method_overiding {
         a.meth2();
 
         B b = new B();
-        b.meth2();
+        b.meth12();
     }
 }
