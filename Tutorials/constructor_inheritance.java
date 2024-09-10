@@ -22,8 +22,8 @@ class Derived1 extends Base1 {
     Derived1() {
         System.out.println("This is Derived Class ! ");
     }
-    Derived1(int b) {
-        super(0);
+    Derived1(int a,int b) {
+        super(a);
         System.out.println("This is Derived Class to print b : "+b);
     }
 
@@ -35,10 +35,20 @@ class Derived1 extends Base1 {
         this.y = y;
     }
 }
+class Child extends Derived1{
+    Child(){
+        System.out.println("This is Child Class ! ");
+    }
+    Child(int a, int b,int c) {
+        super(a,b);
+        System.out.println("This is Child Class to print c : "+c);
+    }
+}
 
 public class constructor_inheritance {
     public static void main(String[] args) {
         // Base1 b = new Base1();
-        Derived1 db =new Derived1(4);
+        // Derived1 db =new Derived1(4);
+        Child ch = new Child(12,13,14);
     }
 }
