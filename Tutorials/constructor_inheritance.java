@@ -24,7 +24,7 @@ class Derived1 extends Base1 {
     }
     Derived1(int b) {
         super(0);
-        System.out.println("This is Base Class to print b : "+b);
+        System.out.println("This is Derived Class to print b : "+b);
     }
 
     public int getY() {
@@ -39,6 +39,6 @@ class Derived1 extends Base1 {
 public class constructor_inheritance {
     public static void main(String[] args) {
         // Base1 b = new Base1();
-        Derived1 db =new Derived1();
+        Derived1 db =new Derived1(4);
     }
 }
