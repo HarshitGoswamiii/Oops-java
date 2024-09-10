@@ -5,7 +5,7 @@ class Circle {
 
     Circle(int rad) {
         this.radius = rad;
-        System.out.println("This Is Parameterized Constructor");
+        System.out.println("This Is Parameterized Circle Constructor");
     }
 
     public void Area(int r) {
@@ -28,7 +28,20 @@ class Cylinder extends Circle {
 }
 
 // <-----------------------------------------------Q-2------------------------------->
-
+class Rectangle{
+    int length;
+    int breadth;
+    void Rectanle(){
+        System.out.println("It is Rectangle Class ! ");
+    }
+    public void setx(int len,int bre){
+        this.length=len;
+        this.breadth=bre;
+    }
+    public void area{
+        
+    }
+}
 
 public class Practice3 {
     public static void main(String[] args) {
