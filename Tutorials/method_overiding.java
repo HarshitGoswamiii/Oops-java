@@ -20,6 +20,6 @@ public class method_overiding {
         a.meth2();
 
         B b = new B();
-        b.meth12();
+        b.meth2();
     }
 }
