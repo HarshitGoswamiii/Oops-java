@@ -1,9 +1,11 @@
 // <----------------------------------------Q-1--------------------------------------->
+
 class Circle {
     public int radius;
 
     Circle(int rad) {
         this.radius = rad;
+        System.out.println("This Is Parameterized Constructor");
     }
 
     public void Area(int r) {
@@ -17,6 +19,7 @@ class Cylinder extends Circle {
     Cylinder(int rad,int height){
         super(rad);
         this.height=height;
+        System.out.println("This Is Parameterized Constructor");
     }
 
     public void Volume() {
