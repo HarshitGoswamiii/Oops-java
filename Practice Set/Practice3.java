@@ -44,16 +44,16 @@ class Rectangle {
         this.height1 = hei;
     }
 
-    public void area(int len,int bre) {
-        System.out.println("Area of Rectangle : " + len*bre);
+    public void area(int len, int bre) {
+        System.out.println("Area of Rectangle : " + len * bre);
     }
 
-    public void volume(int len,int bre,int hei) {
-        System.out.println("Volume of Rectangle : " + len*bre*hei);
+    public void volume(int len, int bre, int hei) {
+        System.out.println("Volume of Rectangle : " + len * bre * hei);
     }
 }
 
-class Cuboid {
+class Cuboid extends Rectangle {
     void Cuboid() {
         System.out.println("It is Cuboid Class ! ");
     }
@@ -72,5 +72,9 @@ public class Practice3 {
         Rectangle rec = new Rectangle();
         rec.area(2,3);
         rec.volume(2,3,4);
+
+        Cuboid cb = new Cuboid();
+        cb.area(3,4);
+        cb.volume(4, 6, 5);
     }
 }
