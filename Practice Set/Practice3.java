@@ -51,7 +51,12 @@ class Cuboid{
     void Cuboid(){
         System.out.println("It is Cuboid Class ! ");
     }
-    
+    public void area(){
+        System.out.println("Area of Rectangle : "+length*breadth);
+    }
+    public void volume(){
+        System.out.println("Area of Rectangle : "+length*breadth*breadth);
+    }
 }
 
 public class Practice3 {
