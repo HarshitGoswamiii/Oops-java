@@ -38,8 +38,11 @@ class Rectangle{
         this.length=len;
         this.breadth=bre;
     }
-    public void area{
-        
+    public void area(){
+        System.out.println("Area of Rectangle : "+length*breadth);
+    }
+    public void volume(){
+        System.out.println("Area of Rectangle : "+length*breadth);
     }
 }
 
