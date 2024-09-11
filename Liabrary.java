@@ -1,8 +1,7 @@
 import java.util.Scanner;
 class Library{
-    public String[] TotalBook = {"Maths","Science","Geography","English","Hindi"};
-    public String[] issuedBook = {};
-    public String[] NewAddedArray = new String[10];
+    private String[] TotalBook ;
+    private String[] issuedBook ;
     public void AddBooks(){
         System.out.print("Enter The Name of Book : ");
         Scanner B = new Scanner(System.in);
