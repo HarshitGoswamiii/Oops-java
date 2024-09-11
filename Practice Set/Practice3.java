@@ -74,7 +74,7 @@ public class Practice3 {
         rec.volume(2,3,4);
 
         Cuboid cb = new Cuboid();
-        cb.area(3,4);
-        cb.volume(4, 6, 5);
+        cb.area(3,4,5);
+        cb.volume(4, 6,5);
     }
 }
