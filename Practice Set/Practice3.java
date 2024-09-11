@@ -31,19 +31,27 @@ class Cylinder extends Circle {
 class Rectangle{
     int length;
     int breadth;
+    int height1;
     void Rectanle(){
         System.out.println("It is Rectangle Class ! ");
     }
-    public void setx(int len,int bre){
+    public void setx(int len,int bre,int hei){
         this.length=len;
         this.breadth=bre;
+        this.height1=hei;
     }
     public void area(){
         System.out.println("Area of Rectangle : "+length*breadth);
     }
     public void volume(){
-        System.out.println("Area of Rectangle : "+length*breadth);
+        System.out.println("Area of Rectangle : "+length*breadth*breadth);
     }
+}
+class Cuboid{
+    void Cuboid(){
+        System.out.println("It is Cuboid Class ! ");
+    }
+    
 }
 
 public class Practice3 {
