@@ -42,7 +42,7 @@ class Guessnum {
     }
 }
 
-public class exer1 {
+public class GuessTheNumber {
     public static void main(String[] args) {
         Guessnum G = new Guessnum();
         int maxnum = 10;

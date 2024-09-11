@@ -1,4 +1,4 @@
-// <----------------------------------------Q-1--------------------------------------->
+// <----------------------------------------Q-1 - 3--------------------------------------->
 
 class Circle {
     public int radius;
@@ -28,7 +28,7 @@ class Cylinder extends Circle {
     }
 }
 
-// <-----------------------------------------------Q-2------------------------------->
+// <-----------------------------------------------Q-2 - 4------------------------------->
 class Rectangle {
     int length;
     int breadth;
@@ -69,12 +69,13 @@ public class Practice3 {
         // clr.Area(4);
         // Cylinder cyl = new Cylinder(4, 5);
 
-        Rectangle rec = new Rectangle();
-        rec.area(2,3);
-        rec.volume(2,3,4);
+        // <--------------------Q2 & Q4----------------->
+        // Rectangle rec = new Rectangle();
+        // rec.area(2,3);
+        // rec.volume(2,3,4);
 
-        Cuboid cb = new Cuboid();
-        cb.area(3,4,5);
-        cb.volume(4, 6,5);
+        // Cuboid cb = new Cuboid();
+        // cb.area(3,4,5);
+        // cb.volume(4, 6,5);
     }
 }
