@@ -16,43 +16,50 @@ class Circle {
 
 class Cylinder extends Circle {
     public int height;
-    Cylinder(int rad,int height){
+
+    Cylinder(int rad, int height) {
         super(rad);
-        this.height=height;
+        this.height = height;
         System.out.println("This Is Parameterized Constructor");
     }
 
     public void Volume() {
-        System.out.println("Volume Of Cyinder : " + 3.14 *this.radius*this.radius*height);
+        System.out.println("Volume Of Cyinder : " + 3.14 * this.radius * this.radius * height);
     }
 }
 
 // <-----------------------------------------------Q-2------------------------------->
-class Rectangle{
+class Rectangle {
     int length;
     int breadth;
     int height1;
-    void Rectanle(){
+
+    void Rectanle() {
         System.out.println("It is Rectangle Class ! ");
     }
-    public void setx(int len,int bre,int hei){
-        this.length=len;
-        this.breadth=bre;
-        this.height1=hei;
+
+    public void setx(int len, int bre, int hei) {
+        this.length = len;
+        this.breadth = bre;
+        this.height1 = hei;
     }
-    public void area(){
-        System.out.println("Area of Rectangle : "+length*breadth);
+
+    public void area() {
+        System.out.println("Area of Rectangle : " + length * breadth);
     }
-    public void volume(){
-        System.out.println("Volume of Rectangle : "+length*breadth*breadth);
+
+    public void volume() {
+        System.out.println("Volume of Rectangle : " + length * breadth * breadth);
     }
 }
-class Cuboid{
-    void Cuboid(){
+
+class Cuboid {
+    void Cuboid() {
         System.out.println("It is Cuboid Class ! ");
     }
-    public void area(){
-        System.out.println("Area of Rectangle : "+length*breadth);
+
+    public void area(int len, int bre, int hei) {
+        System.out.println("Area of Cuboid : " + 2 * ((len * bre) + (bre * hei) + (hei * len)));
     }
 }
 
@@ -60,6 +67,6 @@ public class Practice3 {
     public static void main(String[] args) {
         // Circle clr = new Circle();
         // clr.Area(4);
-        Cylinder cyl = new Cylinder(4,5);
+        Cylinder cyl = new Cylinder(4, 5);
     }
 }
