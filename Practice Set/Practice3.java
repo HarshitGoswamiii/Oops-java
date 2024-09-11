@@ -44,7 +44,7 @@ class Rectangle{
         System.out.println("Area of Rectangle : "+length*breadth);
     }
     public void volume(){
-        System.out.println("Area of Rectangle : "+length*breadth*breadth);
+        System.out.println("Volume of Rectangle : "+length*breadth*breadth);
     }
 }
 class Cuboid{
@@ -53,9 +53,6 @@ class Cuboid{
     }
     public void area(){
         System.out.println("Area of Rectangle : "+length*breadth);
-    }
-    public void volume(){
-        System.out.println("Area of Rectangle : "+length*breadth*breadth);
     }
 }
 
