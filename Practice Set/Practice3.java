@@ -44,12 +44,12 @@ class Rectangle {
         this.height1 = hei;
     }
 
-    public void area() {
-        System.out.println("Area of Rectangle : " + length * breadth);
+    public void area(int len,int bre) {
+        System.out.println("Area of Rectangle : " + len*bre);
     }
 
-    public void volume() {
-        System.out.println("Volume of Rectangle : " + length * breadth * breadth);
+    public void volume(int len,int bre,int hei) {
+        System.out.println("Volume of Rectangle : " + len*bre*hei);
     }
 }
 
@@ -67,6 +67,10 @@ public class Practice3 {
     public static void main(String[] args) {
         // Circle clr = new Circle();
         // clr.Area(4);
-        Cylinder cyl = new Cylinder(4, 5);
+        // Cylinder cyl = new Cylinder(4, 5);
+
+        Rectangle rec = new Rectangle();
+        rec.area();
+        rec.volume();
     }
 }
