@@ -70,7 +70,7 @@ public class Practice3 {
         // Cylinder cyl = new Cylinder(4, 5);
 
         Rectangle rec = new Rectangle();
-        rec.area();
-        rec.volume();
+        rec.area(2,3);
+        rec.volume(2,3,4);
     }
 }
