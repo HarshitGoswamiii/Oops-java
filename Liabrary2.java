@@ -93,18 +93,18 @@ public class Liabrary2 {
 
         // Show available books
         lib.showAvailableBooks();
-        // // Issue Book
-        // lib.issueBooks("Operating System");
+        // Issue Book
+        lib.issueBooks("Operating System");
 
-        // // show avaiable books after issue
+        // show avaiable books after issue
 
-        // lib.showAvailableBooks();
+        lib.showAvailableBooks();
 
-        // // Return Book
-        // lib.returnBooks("Operating System");
+        // Return Book
+        lib.returnBooks("Operating System");
 
-        // // Show Available books after returning
+        // Show Available books after returning
 
-        // lib.showAvailableBooks();
+        lib.showAvailableBooks();
     }
 }
