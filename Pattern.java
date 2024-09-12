@@ -1,14 +1,14 @@
 class patterns {
     public void pattern1() {
         for (int i = 0; i <= 4; i++) {
-            for (int b = 2 * (4 - i); b <= 4; b++) {
-                System.out.println("");
+            for (int b = 2 * (4 - i); b >= 0; b--) {
+                System.out.println(" ");
             }
             for (int j = 1; j <= i; j++) {
                 System.out.print("*");
             }
 
-            System.out.println("");
+            System.out.println();
         }
     }
 
@@ -36,5 +36,6 @@ public class Pattern {
         patterns p = new patterns();
         // p.pattern2();
         // p.pattern11();
+        p.pattern1();
     }
 }
