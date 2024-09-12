@@ -19,6 +19,7 @@ class Shelf {
 
     // For Showing the Avaiable Books
     public void showAvailableBooks() {
+        System.out.println("Available Books : ");
         for (String element : this.Books) {
             if (element == null) {
                 continue;
@@ -43,10 +44,16 @@ public class Library {
 
         // For adding A new Book
         lib.AddBook("Operating System");
+        System.out.println("");
 
         // for Showing the Available Bookds
 
         lib.showAvailableBooks();
+        System.out.println("");
+
+        // For displaying issue books
         lib.IssueBook("Operating System");
+
+        lib.showAvailableBooks();
     }
 }
