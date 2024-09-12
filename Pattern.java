@@ -1,13 +1,13 @@
 class patterns {
     public void pattern1() {
-        for (int i = 0; i <= 4; i++) {
-            for (int b = 2 * (4 - i); b >= 0; b--) {
+        int a=4;
+        for (int i = 0; i <= a; i++) {
+            for (int b = 2 * (a - i); b >= 0; b--) {
                 System.out.println(" ");
             }
-            for (int j = 1; j <= i; j++) {
+            for (int b = 0; b <= i; b++) {
                 System.out.print("*");
             }
-
             System.out.println();
         }
     }
