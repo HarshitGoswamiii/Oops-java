@@ -5,7 +5,7 @@ class patterns {
             for (int b = 2 * (a - i); b >= 0; b--) {
                 System.out.print(" ");
             }
-            for (int b = 0; b <= i; b++) {
+            for (int j = 0; j <= i; j++) {
                 System.out.print("*");
             }
             System.out.println();
