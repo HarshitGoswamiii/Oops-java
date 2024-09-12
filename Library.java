@@ -1,8 +1,8 @@
-class library {
+class Shelf {
     String[] Books;
     int No_of_Books;
 
-    library() {
+    Shelf() {
         this.Books = new String[10];
         int No_of_Books = 0;
     }
@@ -17,7 +17,7 @@ class library {
 
 public class Library {
     public static void main(String[] args) {
-        library lib = new library();
+        Shelf lib = new Shelf();
         lib.AddBook("Operating System");
     }
 }
