@@ -2,7 +2,7 @@ class patterns {
     public void pattern1() {
         int a = 4;
         for (int i = 0; i < a; i++) {
-            for (int b = 2 * (a - i); b >= 0; b--) {
+            for (int b = 1; b <= (a-i-1); b++) {
                 System.out.print(" ");
             }
             for (int j = 0; j <= i; j++) {
