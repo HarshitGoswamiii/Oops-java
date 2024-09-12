@@ -17,6 +17,7 @@ class Shelf {
         System.out.println("The Book has Been Added !");
     }
 
+    // For Showing the Avaiable Books
     public void showAvailableBooks() {
         for (String element : this.Books) {
             if (element == null) {
@@ -25,12 +26,27 @@ class Shelf {
             System.out.println(element);
         }
     }
+
+    public void IssueBook(String Book) {
+        for (int i = 0; i <= Books.length; i++) {
+            if (this.Books.equals(Book)) {
+                System.out.println("This Book Has Been Issued ! ");
+                this.Books[i] = null;
+            }
+        }
+    }
 }
 
 public class Library {
     public static void main(String[] args) {
         Shelf lib = new Shelf();
+
+        // For adding A new Book
         lib.AddBook("Operating System");
+
+        // for Showing the Available Bookds
+
         lib.showAvailableBooks();
+        lib.IssueBook("Operating System");
     }
 }
