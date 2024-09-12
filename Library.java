@@ -16,8 +16,14 @@ class Shelf {
         NumberOfBook++;
         System.out.println("The Book has Been Added !");
     }
-    public void showAvailableBooks(){
-        
+
+    public void showAvailableBooks() {
+        for (String element : Books) {
+            if (Books == null) {
+                continue;
+            }
+            System.out.println(element);
+        }
     }
 }
 
@@ -25,5 +31,6 @@ public class Library {
     public static void main(String[] args) {
         Shelf lib = new Shelf();
         lib.AddBook("Operating System");
+        lib.showAvailableBooks();
     }
 }
