@@ -29,10 +29,12 @@ class Shelf {
     }
 
     public void IssueBook(String Book) {
+        System.out.println("Books to be issued : "+Book);
         for (int i = 0; i <= Books.length; i++) {
-            if (this.Books.equals(Book)) {
-                System.out.println("This Book Has Been Issued ! ");
-                this.Books[i] = null;
+        if (this.Books[i].equals(Book)) {
+            System.out.println("This Book Has Been Issued ! ");
+            this.Books[i] = null;
+            return;
             }
         }
     }
@@ -47,13 +49,12 @@ public class Library {
         System.out.println("");
 
         // for Showing the Available Bookds
-
         lib.showAvailableBooks();
         System.out.println("");
 
         // For displaying issue books
         lib.IssueBook("Operating System");
-
+        System.out.println("");
         lib.showAvailableBooks();
     }
 }
