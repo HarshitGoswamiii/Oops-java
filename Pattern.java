@@ -3,7 +3,7 @@ class patterns {
         int a = 4;
         for (int i = 0; i < a; i++) {
             for (int b = 1; b <= (a-i-1); b++) {
-                System.out.print(" ");
+                System.out.print("");
             }
             for (int j = 0; j <= i; j++) {
                 System.out.print("*");
