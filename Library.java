@@ -28,6 +28,7 @@ class Shelf {
         }
     }
 
+    // For Issuing books
     public void IssueBook(String Book) {
         System.out.println("Books to be issued : " + Book);
         for (int i = 0; i <= Books.length; i++) {
@@ -39,6 +40,7 @@ class Shelf {
         }
     }
 
+    // For Returning Books
     public void ReturnBook(String Book) {
         System.out.println("Returning Book : " + Book);
         Books[NumberOfBook] = Book;
@@ -67,9 +69,11 @@ public class Library {
         lib.IssueBook("Hindi");
         System.out.println("");
         lib.showAvailableBooks();
+        System.out.println("");
 
         // for returnng issued book
         lib.ReturnBook("Social");
+        lib.ReturnBook("Hindi");
         System.out.println("");
         lib.showAvailableBooks();
 
