@@ -1,17 +1,23 @@
 class Shelf {
     String[] Books;
-    int No_of_Books;
+    int NumberOfBook;
 
     Shelf() {
         this.Books = new String[10];
-        int No_of_Books = 0;
+        int NumberOfBook = 0;
     }
 
     // To Add the Book or Books in Available Library
     public void AddBook(String Book) {
-        Books[No_of_Books] = Book;
-        No_of_Books++;
+        if (NumberOfBook >= Books.length) {
+            System.out.println("The Library is Full ! There is no space to Add a Book");
+        }
+        Books[NumberOfBook] = Book;
+        NumberOfBook++;
         System.out.println("The Book has Been Added !");
+    }
+    public void showAvailableBooks(){
+        
     }
 }
 
