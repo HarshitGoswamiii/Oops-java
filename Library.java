@@ -18,8 +18,8 @@ class Shelf {
     }
 
     public void showAvailableBooks() {
-        for (String element : Books) {
-            if (Books == null) {
+        for (String element : this.Books) {
+            if (element == null) {
                 continue;
             }
             System.out.println(element);
