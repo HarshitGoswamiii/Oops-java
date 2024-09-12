@@ -1,7 +1,7 @@
 class patterns {
     public void pattern1() {
-        int a=4;
-        for (int i = 0;i < a; i++) {
+        int a = 4;
+        for (int i = 0; i < a; i++) {
             for (int b = 2 * (a - i); b >= 0; b--) {
                 System.out.println(" ");
             }
