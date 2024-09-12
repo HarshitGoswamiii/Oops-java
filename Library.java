@@ -29,14 +29,22 @@ class Shelf {
     }
 
     public void IssueBook(String Book) {
-        System.out.println("Books to be issued : "+Book);
+        System.out.println("Books to be issued : " + Book);
         for (int i = 0; i <= Books.length; i++) {
-        if (this.Books[i].equals(Book)) {
-            System.out.println("This Book Has Been Issued ! ");
-            this.Books[i] = null;
-            return;
+            if (this.Books[i].equals(Book)) {
+                System.out.println("This Book Has Been Issued ! ");
+                this.Books[i] = null;
+                return;
             }
         }
+    }
+
+    public void ReturnBook(String Book) {
+        System.out.println("Returning Book : " + Book);
+        Books[NumberOfBook] = Book;
+        NumberOfBook++;
+        System.out.println("The Book has Been Added !");
+
     }
 }
 
@@ -45,7 +53,10 @@ public class Library {
         Shelf lib = new Shelf();
 
         // For adding A new Book
-        lib.AddBook("Operating System");
+        lib.AddBook("Science");
+        lib.AddBook("English");
+        lib.AddBook("Hindi");
+        lib.AddBook("Maths");
         System.out.println("");
 
         // for Showing the Available Bookds
@@ -53,8 +64,14 @@ public class Library {
         System.out.println("");
 
         // For displaying issue books
-        lib.IssueBook("Operating System");
+        lib.IssueBook("Hindi");
         System.out.println("");
         lib.showAvailableBooks();
+
+        // for returnng issued book
+        lib.ReturnBook("Social");
+        System.out.println("");
+        lib.showAvailableBooks();
+
     }
 }
