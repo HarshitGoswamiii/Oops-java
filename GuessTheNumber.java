@@ -41,7 +41,6 @@ class Guessnum {
         }
     }
 }
-
 public class GuessTheNumber {
     public static void main(String[] args) {
         Guessnum G = new Guessnum();
