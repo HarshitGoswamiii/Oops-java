@@ -30,7 +30,6 @@ class patterns {
         }
     }
 }
-
 public class Pattern {
     public static void main(String[] args) {
         patterns p = new patterns();
