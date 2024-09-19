@@ -3,7 +3,6 @@ abstract class Shape {
 
     abstract public void perimeter(); // abstract class for calculating perimeter
 
-    // abstract public void volume();
 }
 
 class Square extends Shape {
