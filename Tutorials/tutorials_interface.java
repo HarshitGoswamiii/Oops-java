@@ -1,3 +1,5 @@
+
+
 interface Bicycle { // interface for Bicycle
     void SpeedUp(int increment);
 
@@ -8,7 +10,7 @@ interface PlayRing { // interface for Ring
     void Ring();
 }
 
-class AvonCycle implements Bicycle {
+class AvonCycle implements Bicycle, PlayRing{
     int Speed = 10;
 
     public void SpeedUp(int increment) {
@@ -19,7 +21,9 @@ class AvonCycle implements Bicycle {
         Speed = Speed - decrement;
         System.out.println(Speed);
     }
-
+    public void Ring(){
+        System.out.println("Ring Ring ! ! ! ! ");
+    }
 }
 
 public class tutorials_interface {
@@ -28,5 +32,6 @@ public class tutorials_interface {
         AvonCycle cycle = new AvonCycle();
         cycle.SpeedUp(8);
         cycle.ApplyBrake(4);
+        cycle.Ring();
     }
 }
