@@ -3,10 +3,10 @@ abstract class Shape {
 
     abstract public void perimeter();
 
-    abstract public void volume();
+    // abstract public void volume();
 }
 
-class Sqaure extends Shape {
+class Square extends Shape {
     public void area(int a) {
         System.out.println("Area of Square : " + a * a);
     }
@@ -18,6 +18,8 @@ class Sqaure extends Shape {
 
 public class tutorials {
     public static void main(String[] args) {
-
+        Square s=new Square();
+        s.area(4);
+        s.perimeter(3);
     }
 }
