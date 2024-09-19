@@ -24,8 +24,7 @@ class Square extends Shape {
 
 public class tutorials {
     public static void main(String[] args) {
-        // Shape sh = new Shape(); ---> it throws error bcz it is abstract classs ,So it
-        // cannot be instantiated;
+        // Shape sh = new Shape(); ---> it throws error bcz it is abstract classs ,So it cannot be instantiated;
         Square s = new Square();
         s.area();
         s.perimeter();
