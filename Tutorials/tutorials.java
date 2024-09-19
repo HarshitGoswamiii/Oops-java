@@ -7,7 +7,7 @@ abstract class Shape {
 }
 
 class Square extends Shape {
-    int a = 4;
+    int a = 3;
     public void area() {
         System.out.println("Area of Square : " + a * a);
     }
