@@ -9,6 +9,11 @@ abstract class Shape {
 class Square extends Shape {
     int a = 3;
 
+    // Constructor of Square
+    Square() {
+        System.out.println("Square ! ");
+    }
+
     // Calculates Area
     @Override
     public void area() {
@@ -25,6 +30,11 @@ class Square extends Shape {
 class Rectangle extends Shape {
     int length = 4;
     int breadth = 6;
+
+    // Constructor of Rectangle
+    Rectangle() {
+        System.out.println("Rectangle !");
+    }
 
     @Override
     public void area() {
