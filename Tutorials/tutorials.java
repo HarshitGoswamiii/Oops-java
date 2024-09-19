@@ -26,10 +26,12 @@ class Rectangle extends Shape {
     int length = 4;
     int breadth = 6;
 
+    @Override
     public void area() {
         System.out.println("Area of Rectangle : " + length * breadth);
     }
 
+    @Override
     public void perimeter() {
         System.out.println("Perimeter of Rectangle : " + (length + breadth) * 2);
     }
@@ -42,5 +44,9 @@ public class tutorials {
         Square s = new Square();
         s.area();
         s.perimeter();
+
+        Rectangle rec = new Rectangle();
+        rec.area();
+        rec.perimeter();
     }
 }
