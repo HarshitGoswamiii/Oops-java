@@ -22,9 +22,23 @@ class Square extends Shape {
     }
 }
 
+class Rectangle extends Shape {
+    int length = 4;
+    int breadth = 6;
+
+    public void area() {
+        System.out.println("Area of Rectangle : " + length * breadth);
+    }
+
+    public void perimeter() {
+        System.out.println("Perimeter of Rectangle : " + (length + breadth) * 2);
+    }
+}
+
 public class tutorials {
     public static void main(String[] args) {
-        // Shape sh = new Shape(); ---> it throws error bcz it is abstract classs ,So it cannot be instantiated;
+        // Shape sh = new Shape(); ---> it throws error bcz it is abstract classs ,So it
+        // cannot be instantiated;
         Square s = new Square();
         s.area();
         s.perimeter();
