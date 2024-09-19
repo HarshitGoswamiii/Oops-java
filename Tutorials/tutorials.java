@@ -7,19 +7,20 @@ abstract class Shape {
 }
 
 class Square extends Shape {
-    public void area(int a) {
+    int a = 4;
+    public void area() {
         System.out.println("Area of Square : " + a * a);
     }
 
-    public void perimeter(int a) {
+    public void perimeter() {
         System.out.println("Perimeter of Sqaure : " + 4 * a);
     }
 }
 
 public class tutorials {
     public static void main(String[] args) {
-        Square s=new Square();
-        s.area(4);
-        s.perimeter(3);
+        Square s = new Square();
+        s.area();
+        s.perimeter();
     }
 }
