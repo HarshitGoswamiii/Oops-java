@@ -17,6 +17,8 @@ class MySample implements Sample2 {
 
 public class inheritance_interface {
     public static void main(String[] args) {
-
+        MySample sam = new MySample();
+        sam.meth1();
+        sam.meth2();
     }
 }
