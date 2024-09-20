@@ -1,17 +1,17 @@
 
-interface camera {  //For Camera Funcationalty
+interface camera { // For Camera Funcationalty
     public void TakeSnap();
 
     public void RecordVideo();
 }
 
-interface Wifi {    //For Nertworks
+interface Wifi { // For Nertworks
     String[] GetNetwork();
 
     public void wifi();
 }
 
-class CellPhone {   //Base or Parent Class of Phone
+class CellPhone { // Base or Parent Class of Phone
     public void CallNumber(int number) {
         System.out.println("Calling .... " + number);
     }
@@ -36,13 +36,18 @@ class SmartPhone extends CellPhone implements camera, Wifi {
         return null;
     }
 
-    public void wifi() {
-        System.out.println("Connecting......");
+    public void wifi(String Network) {
+        System.out.println("Connecting......" + Network);
     }
 }
 
 public class defaultmethods {
     public static void main(String[] args) {
+        SmartPhone oppo = new SmartPhone();
+        oppo.CallNumber(99909090);
+        oppo.PickCall();
+        oppo.GetNetwork();
+        oppo.wifi();
 
     }
 }
