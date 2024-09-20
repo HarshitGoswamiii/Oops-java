@@ -46,7 +46,7 @@ public class defaultmethods {
         SmartPhone oppo = new SmartPhone();
         // oppo.CallNumber(99909090);
         // oppo.PickCall();
-        System.out.println("\n");
+        System.out.println();
         for (String element : oppo.GetNetwork()) {
             System.out.println(element);
         }
