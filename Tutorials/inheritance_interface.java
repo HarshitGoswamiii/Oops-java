@@ -7,6 +7,9 @@ interface Sample2 extends Sample {
 }
 
 class MySample implements Sample2 {
+    public void meth1() {
+        System.out.println("Meth 1");
+    }
     public void meth2() {
         System.out.println("Meth 2");
     }
