@@ -8,7 +8,7 @@ interface camera { // For Camera Funcationalty
 interface Wifi { // For Nertworks
     String[] GetNetwork();
 
-    public void wifi();
+    public void wifi(String Network);
 }
 
 class CellPhone { // Base or Parent Class of Phone
@@ -33,7 +33,7 @@ class SmartPhone extends CellPhone implements camera, Wifi {
     public String[] GetNetwork() {
         System.out.println("Getting Lists Of Networks - > ");
         String[] NetworkList = { "Harshit 5G", "Jio Fiber", "DavCC" };
-        return null;
+        return NetworkList;
     }
 
     public void wifi(String Network) {
@@ -46,7 +46,7 @@ public class defaultmethods {
         SmartPhone oppo = new SmartPhone();
         oppo.CallNumber(99909090);
         oppo.PickCall();
-        oppo.GetNetwork();
+        System.out.println(oppo.GetNetwork());
         oppo.wifi("Jio Fiber");
 
         oppo.TakeSnap();
