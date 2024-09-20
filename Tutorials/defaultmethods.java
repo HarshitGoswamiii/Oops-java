@@ -46,11 +46,12 @@ public class defaultmethods {
         SmartPhone oppo = new SmartPhone();
         oppo.CallNumber(99909090);
         oppo.PickCall();
+        System.out.println("\n");
         for (String element : oppo.GetNetwork()) {
             System.out.println(element);
         }
+        System.out.println("\n");
         oppo.wifi("Jio Fiber");
-
         oppo.TakeSnap();
         oppo.RecordVideo();
 
