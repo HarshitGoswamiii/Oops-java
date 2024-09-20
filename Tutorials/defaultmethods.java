@@ -6,7 +6,7 @@ interface camera {
 }
 
 interface Wifi {
-    public void wifi(String Network);
+    public void wifi();
 }
 
 class CellPhone {
@@ -28,7 +28,7 @@ class SmartPhone extends CellPhone implements camera, Wifi {
         System.out.println("Recording Video....");
     }
 
-    public void wifi("Jio") {
+    public void wifi() {
         System.out.println("Connecting......");
     }
 }
