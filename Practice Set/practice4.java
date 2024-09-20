@@ -34,5 +34,6 @@ public class practice4 {
         Pen1 p = new Pen1();
         p.Write();
         p.Refill();
+        p.changeNib(0.2f);
     }
 }
