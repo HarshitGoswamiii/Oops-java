@@ -1,17 +1,17 @@
 
-interface camera {
+interface camera {  //For Camera Funcationalty
     public void TakeSnap();
 
     public void RecordVideo();
 }
 
-interface Wifi {
+interface Wifi {    //For Nertworks
     String[] GetNetwork();
 
     public void wifi();
 }
 
-class CellPhone {
+class CellPhone {   //Base or Parent Class of Phone
     public void CallNumber(int number) {
         System.out.println("Calling .... " + number);
     }
