@@ -1,3 +1,5 @@
+
+
 interface camera {
     public void TakeSnap();
 
@@ -16,6 +18,10 @@ class CellPhone {
     public void PickCall() {
         System.out.println("Picking Call.....!");
     }
+}
+
+class SmartPhone extends CellPhone implements camera, Wifi{
+    
 }
 
 public class defaultmethods {
