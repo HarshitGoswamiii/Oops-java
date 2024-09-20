@@ -46,7 +46,9 @@ public class defaultmethods {
         SmartPhone oppo = new SmartPhone();
         oppo.CallNumber(99909090);
         oppo.PickCall();
-        System.out.println(oppo.GetNetwork());
+        for (String element : oppo.GetNetwork()) {
+            System.out.println(element);
+        }
         oppo.wifi("Jio Fiber");
 
         oppo.TakeSnap();
