@@ -44,16 +44,16 @@ class SmartPhone extends CellPhone implements camera, Wifi {
 public class defaultmethods {
     public static void main(String[] args) {
         SmartPhone oppo = new SmartPhone();
-        oppo.CallNumber(99909090);
-        oppo.PickCall();
+        // oppo.CallNumber(99909090);
+        // oppo.PickCall();
         System.out.println("\n");
         for (String element : oppo.GetNetwork()) {
             System.out.println(element);
         }
-        System.out.println("\n");
-        oppo.wifi("Jio Fiber");
-        oppo.TakeSnap();
-        oppo.RecordVideo();
+        // System.out.println("\n");
+        // oppo.wifi("Jio Fiber");
+        // oppo.TakeSnap();
+        // oppo.RecordVideo();
 
     }
 }
