@@ -17,6 +17,8 @@ class Pen1 extends Pen {
 
 public class practice4 {
     public static void main(String[] args) {
-
+        Pen1 p = new Pen1();
+        p.Write();
+        p.Refill();
     }
 }
