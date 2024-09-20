@@ -47,7 +47,10 @@ public class defaultmethods {
         oppo.CallNumber(99909090);
         oppo.PickCall();
         oppo.GetNetwork();
-        oppo.wifi();
+        oppo.wifi("Jio Fiber");
+
+        oppo.TakeSnap();
+        oppo.RecordVideo();
 
     }
 }
