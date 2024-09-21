@@ -65,6 +65,20 @@ interface SmartTVRemote extends TVremote {
     public void Assistant();
 }
 
+class SmartTv implements SmartTVRemote {
+    public void Buttons() {
+        System.out.println("Press Button.....");
+    }
+
+    public void Commands() {
+        System.out.println("Give Commands.....");
+    }
+
+    public void Assistant() {
+        System.out.println("Tap to Speak !");
+    }
+}
+
 public class practice4 {
     public static void main(String[] args) {
 
@@ -86,5 +100,11 @@ public class practice4 {
         // bs.sleep();
         // bs.jump(); ---Throws an Error Because it only use basic Animal functions not
         // other
+
+        // Q - 6 & 7
+        SmartTv sm = new SmartTv();
+        sm.Assistant();
+        sm.Commands();
+        sm.Buttons();
     }
 }
