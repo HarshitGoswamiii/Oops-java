@@ -1,4 +1,3 @@
-
 interface camera { // For Camera Funcationalty
     public void TakeSnap();
 
