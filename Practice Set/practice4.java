@@ -31,6 +31,10 @@ class Monkey{
     }
 }
 
+class Human extends Monkey implements BasicAnimal{
+
+}
+
 // class Pen1 extends Pen { // Q-1 & 2
 // public void Write() {
 // {
