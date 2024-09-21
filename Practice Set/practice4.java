@@ -28,30 +28,41 @@
 // }
 
 // -------------------Q-3 & 5-------------->
-interface BasicAnimal {
-    public void eat();
+// interface BasicAnimal {
+//     public void eat();
 
-    public void sleep();
+//     public void sleep();
+// }
+
+// class Monkey {
+//     public void jump() {
+//         System.out.println("Jumping....");
+//     }
+
+//     public void bite() {
+//         System.out.println("Biting....");
+//     }
+// }
+
+// class Human extends Monkey implements BasicAnimal {
+//     public void eat() {
+//         System.out.println("Eating.....");
+//     }
+
+//     public void sleep() {
+//         System.out.println("Sleeping.....");
+//     }
+// }
+
+// ----------------------------------Q-6----------------->
+interface TVremote {
+    public void Buttons();
+
+    public void Commands();
 }
 
-class Monkey {
-    public void jump() {
-        System.out.println("Jumping....");
-    }
-
-    public void bite() {
-        System.out.println("Biting....");
-    }
-}
-
-class Human extends Monkey implements BasicAnimal {
-    public void eat() {
-        System.out.println("Eating.....");
-    }
-
-    public void sleep() {
-        System.out.println("Sleeping.....");
-    }
+interface SmartTVRemote extends TVremote {
+    public void Assistant();
 }
 
 public class practice4 {
@@ -71,8 +82,9 @@ public class practice4 {
         // h.jump();
 
         // Q - 5 ---> Performing POLYMORPHISM
-        BasicAnimal bs = new Human();
+        // BasicAnimal bs = new Human();
         // bs.sleep();
-        // bs.jump(); ---Throws an Error Because it only use basic Animal functions not other
+        // bs.jump(); ---Throws an Error Because it only use basic Animal functions not
+        // other
     }
 }
