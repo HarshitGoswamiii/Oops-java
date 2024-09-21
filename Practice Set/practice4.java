@@ -15,8 +15,19 @@
 //     }
 
 // }
+// class Pen1 extends Pen { // Q-1 & 2
+// public void Write() {
+// {
+// System.out.println("Writing.....");
+// }
+// }
 
-// -------------------Q-3-------------->
+// public void Refill() {
+// System.out.println("Refilling.......");
+// }
+// }
+
+// -------------------Q-3 & 5-------------->
 interface BasicAnimal {
     public void eat();
 
@@ -43,18 +54,6 @@ class Human extends Monkey implements BasicAnimal {
     }
 }
 
-// class Pen1 extends Pen { // Q-1 & 2
-// public void Write() {
-// {
-// System.out.println("Writing.....");
-// }
-// }
-
-// public void Refill() {
-// System.out.println("Refilling.......");
-// }
-// }
-
 public class practice4 {
     public static void main(String[] args) {
 
@@ -65,10 +64,13 @@ public class practice4 {
         // p.changeNib(0.2f);
 
         // Q-3
-        Human h = new Human();
-        h.sleep();
-        h.eat();
-        h.bite();
-        h.jump();
+        // Human h = new Human();
+        // h.sleep();
+        // h.eat();
+        // h.bite();
+        // h.jump();
+
+        // Q - 5
+        
     }
 }
