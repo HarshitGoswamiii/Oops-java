@@ -22,16 +22,25 @@ interface BasicAnimal {
 
     public void sleep();
 }
-class Monkey{
-    public void jump(){
+
+class Monkey {
+    public void jump() {
         System.out.println("Jumping....");
     }
-    public void bite(){
+
+    public void bite() {
         System.out.println("Jumping....");
     }
 }
 
-class Human extends Monkey implements BasicAnimal{
+class Human extends Monkey implements BasicAnimal {
+    public void eat(){
+        System.out.println("Eating.....");
+    }
+    public void sleep(){
+        System.out.println("Sleeping.....");
+    }
+
 
 }
 
@@ -56,7 +65,7 @@ public class practice4 {
         // p.Refill();
         // p.changeNib(0.2f);
 
-        // Q-3 
+        // Q-3
 
     }
 }
