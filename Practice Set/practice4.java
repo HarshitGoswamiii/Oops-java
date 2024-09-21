@@ -70,7 +70,9 @@ public class practice4 {
         // h.bite();
         // h.jump();
 
-        // Q - 5
-        
+        // Q - 5 ---> Performing POLYMORPHISM
+        BasicAnimal bs = new Human();
+        bs.sleep();
+        bs.eat();
     }
 }
