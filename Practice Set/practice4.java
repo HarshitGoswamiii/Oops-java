@@ -72,7 +72,7 @@ public class practice4 {
 
         // Q - 5 ---> Performing POLYMORPHISM
         BasicAnimal bs = new Human();
-        bs.sleep();
-        bs.eat();
+        // bs.sleep();
+        // bs.jump(); ---Throws an Error Because it only use basic Animal functions not other
     }
 }
