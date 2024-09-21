@@ -64,6 +64,10 @@ public class practice4 {
         // p.changeNib(0.2f);
 
         // Q-3
-        
+        Human h = new Human();
+        h.sleep();
+        h.eat();
+        h.bite();
+        h.jump();
     }
 }
