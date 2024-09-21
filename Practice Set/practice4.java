@@ -29,15 +29,16 @@ class Monkey {
     }
 
     public void bite() {
-        System.out.println("Jumping....");
+        System.out.println("Biting....");
     }
 }
 
 class Human extends Monkey implements BasicAnimal {
-    public void eat(){
+    public void eat() {
         System.out.println("Eating.....");
     }
-    public void sleep(){
+
+    public void sleep() {
         System.out.println("Sleeping.....");
     }
 }
