@@ -40,8 +40,6 @@ class Human extends Monkey implements BasicAnimal {
     public void sleep(){
         System.out.println("Sleeping.....");
     }
-
-
 }
 
 // class Pen1 extends Pen { // Q-1 & 2
@@ -66,6 +64,6 @@ public class practice4 {
         // p.changeNib(0.2f);
 
         // Q-3
-
+        
     }
 }
