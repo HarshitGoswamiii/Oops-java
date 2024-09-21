@@ -7,6 +7,7 @@ abstract class Pen {
 
     abstract public void Refill();
 
+    // ----------Q-2---------------------->
     public void changeNib(float num) {
         float ch;
         ch = nib + num;
