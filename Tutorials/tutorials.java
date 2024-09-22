@@ -1,3 +1,5 @@
+import problem.java.Rectangle;
+
 abstract class Shape {
     abstract public void area(); // abstract class for calculating area
 
