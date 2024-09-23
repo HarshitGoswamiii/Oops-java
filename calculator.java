@@ -17,7 +17,6 @@ class HybridCalculator {
         System.out.println("This is Hybrid Calculator");
     }
 }
-
 public class calculator {
     public static void main(String[] args) {
         System.out.println("This is Main Class ! ");
