@@ -36,15 +36,15 @@ public class calc1 {
         System.out.print("Enter Your Choice : ");
         int num = sc.nextInt();
         switch (num) {
-            case '1' -> {
+            case 1 -> {
                 Calculator c1 = new Calculator();
                 c1.printing();
             }
-            case '2' -> {
+            case 2 -> {
                 ScCalculator c2 = new ScCalculator();
                 c2.printing();
             }
-            case '3' -> {
+            case 3 -> {
                 HybridCalculator c3 = new HybridCalculator();
                 c3.printing();
             }
