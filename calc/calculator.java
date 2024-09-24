@@ -1,6 +1,6 @@
 package calc;
 
-class Calculator {
+class Calcul {
     public void print() {
         System.out.println("This is Calculator");
     }
