@@ -10,7 +10,7 @@ class Calulator {
 
 class ScCalulator {
     int a = 10;
-    int b = 12;
+    int b = 3;
 
     public void printing() {
         System.out.println(a * b);
@@ -20,7 +20,7 @@ class ScCalulator {
 
 class HybridCalulator {
     int a = 10;
-    int b = 12;
+    int b = 2;
 
     public void printing() {
         System.out.println(a ^ b);
