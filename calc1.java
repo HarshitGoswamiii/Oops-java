@@ -34,16 +34,19 @@ public class calc1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
-        if(num==1){
-            Calculator c1 = new Calculator();
-            c1.printing();
-        }
-        else if (num==2) {
-            ScCalculator c2 = new ScCalculator();
-            c2.printing();
-        }else{
-            HybridCalculator c3 = new HybridCalculator();
-            c3.printing();
+        switch (num) {
+            case '1' -> {
+                Calculator c1 = new Calculator();
+                c1.printing();
+            }
+            case '2' -> {
+                ScCalculator c2 = new ScCalculator();
+                c2.printing();
+            }
+            case '3' -> {
+                HybridCalculator c3 = new HybridCalculator();
+                c3.printing();
+            }
         }
     }
 }
