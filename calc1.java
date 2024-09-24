@@ -1,4 +1,4 @@
-
+import java.util.Scanner;
 
 class Calculator {
     int a = 10;
@@ -32,11 +32,18 @@ class HybridCalculator {
 
 public class calc1 {
     public static void main(String[] args) {
-        Calculator c1 = new Calculator();
-        c1.printing();
-        ScCalculator c2 = new ScCalculator();
-        c2.printing();
-        HybridCalculator c3 = new HybridCalculator();
-        c3.printing();
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+        if(num==1){
+            Calculator c1 = new Calculator();
+            c1.printing();
+        }
+        else if (num==2) {
+            ScCalculator c2 = new ScCalculator();
+            c2.printing();
+        }else{
+            HybridCalculator c3 = new HybridCalculator();
+            c3.printing();
+        }
     }
 }
