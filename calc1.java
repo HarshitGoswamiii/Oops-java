@@ -33,6 +33,7 @@ class HybridCalculator {
 public class calc1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        System.out.print("Enter Your Choice : ");
         int num = sc.nextInt();
         switch (num) {
             case '1' -> {
