@@ -1,4 +1,6 @@
-class Calulator {
+
+
+class Calculator {
     int a = 10;
     int b = 12;
 
@@ -8,7 +10,7 @@ class Calulator {
     }
 }
 
-class ScCalulator {
+class ScCalculator {
     int a = 10;
     int b = 3;
 
@@ -18,7 +20,7 @@ class ScCalulator {
     }
 }
 
-class HybridCalulator {
+class HybridCalculator {
     int a = 10;
     int b = 2;
 
@@ -30,6 +32,11 @@ class HybridCalulator {
 
 public class calc1 {
     public static void main(String[] args) {
-
+        Calculator c1 = new Calculator();
+        c1.printing();
+        ScCalculator c2 = new ScCalculator();
+        c2.printing();
+        HybridCalculator c3 = new HybridCalculator();
+        c3.printing();
     }
 }
