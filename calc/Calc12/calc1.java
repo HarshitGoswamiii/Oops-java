@@ -1,4 +1,4 @@
-package calc;
+package calc.Calc12;
 
 import java.util.Scanner;
 
