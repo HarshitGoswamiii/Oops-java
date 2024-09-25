@@ -1,5 +1,5 @@
 class Rectangle {
-    int len, bre;
+    int len, bre,hei;
     
     public int getLen() {
         return len;
@@ -16,6 +16,13 @@ class Rectangle {
     public void setBre(int bre) {
         this.bre = bre;
     }
+    public int getHei() {
+        return hei;
+    }
+
+    public void setHei(int hei) {
+        this.hei = hei;
+    }
     public void SurfaceArea() {
         System.out.println(len*bre);
     }
@@ -23,6 +30,7 @@ class Rectangle {
     public void Volume() {
 
     }
+
 }
 
 class Circle extends Rectangle {
