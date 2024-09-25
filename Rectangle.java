@@ -4,7 +4,7 @@ public class Rectangle extends shapes {
     }
 
     public void Area() {
-        System.out.println(dim1 * dim2);
+        System.out.println(this.dim1 * this.dim2);
     }
 
     public static void main(String[] args) {
