@@ -1,21 +1,26 @@
 class Rectangle {
-
-    public void SurfaceArea(){
+    int len, bre;
+    public void SurfaceArea() {
 
     }
-    public void Volume(){
+
+    public void Volume() {
 
     }
 }
+
 class Circle extends Rectangle {
 
 }
+
 class Square extends Circle {
 
 }
+
 class Sphere extends Square {
 
 }
+
 class Cylinder extends Sphere {
 
 }
