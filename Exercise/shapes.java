@@ -1,7 +1,13 @@
 class Rectangle {
 
+    public void SurfaceArea(){
+
+    }
+    public void Volume(){
+
+    }
 }
-class Circle {
+class Circle extends Rectangle {
 
 }
 class Square {
