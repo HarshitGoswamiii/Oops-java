@@ -1,7 +1,23 @@
 class Rectangle {
     int len, bre;
-    public void SurfaceArea() {
+    
+    public int getLen() {
+        return len;
+    }
 
+    public void setLen(int len) {
+        this.len = len;
+    }
+
+    public int getBre() {
+        return bre;
+    }
+    
+    public void setBre(int bre) {
+        this.bre = bre;
+    }
+    public void SurfaceArea() {
+        System.out.println(len*bre);
     }
 
     public void Volume() {
