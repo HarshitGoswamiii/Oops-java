@@ -10,13 +10,13 @@ class Rectangle {
 class Circle extends Rectangle {
 
 }
-class Square {
+class Square extends Circle {
 
 }
-class Sphere {
+class Sphere extends Square {
 
 }
-class Cylinder {
+class Cylinder extends Sphere {
 
 }
 
